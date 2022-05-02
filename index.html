@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ERROR 404 MUSIC</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<script defer src="fontawesome/js/all.js"></script>
+</head>
+<body>
+	<audio id="player" ontimeupdate="updateProgress();">
+		<source id="source">
+		Audio no soportado
+	</audio>
+	<div class="columna1">
+		<img src="img/Musica.png" class="imagen" alt=""></img>
+		<br>
+		<div>
+			<span id="currentPlay"></span>
+		</div><br>
+		<progress id="progress" value="0" max="100"></progress>
+		<div id="timer" class="timer">&nbsp;</div>
+	</div>
+	<div class="columna2">
+		<div class="center">
+			<h3 class="titulo">MI MUSICA</h3>
+			<i class="fas fa-backward fa-5x" onclick="prevMusic();"></i>
+			<i class="far fa-play-circle fa-5x" onclick="togglePlay();" id="iconPlay"></i>
+			<i class="fas fa-forward fa-5x" onclick="nextMusic();"></i>
+		</div><br>
+		<div class="volumen">
+			<h3 style="text-align:left; color:rgb(255, 255, 255); font-size:25px">Bateria Fina: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fas fa-volume-down"></i>
+				<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="1">
+				<i class="fas fa-volume-up"></i>
+			</h3>
+		</div>
+		<div id="playList" class="audio"></div>
+	</div>
+
+	<table>
+		<tr>
+			<td class="btn btn-green">
+				<a href="https://www.linkedin.com/in/franklin-a-r-c/" target="_blank" style="color: white;"><span>LinkedIn</span></a>
+			</td>
+			<td class="btn btn-green">
+				<a href="https://github.com/FranklinRicaldiCastro" target="_blank" style="color: white;"><span>GitHub</span></a>
+			</td>
+			<td class="btn btn-green">
+				<a href="https://www.facebook.com/IIIIIFACEBOKOFICIALIIIIIFranklinRicaldiCastroIIIII/" target="_blank" style="color: white;"><span>Facebook</span></a>
+			</td>
+			<td class="btn btn-green">
+				<a href="https://twitter.com/FRANKLIN_A_R_C" target="_blank" style="color: white;"><span>Twitter</span></a>
+			</td>
+			<td class="btn btn-green">
+				<a href="https://www.instagram.com/franklin_a_r_c/?hl=es-la" target="_blank" style="color: white;"><span>Instagram</span></a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+				<p>&copy; Copyright ©2022 - RICALDI CASTRO, Franklin Antolin.</p>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
